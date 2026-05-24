@@ -62,7 +62,6 @@
     'Künstliche Intelligenz',
     'Multiplayer-Adventure-Game',
     'AEVO-Ausbildung',
-    'DSGVO-konformes Tracking',
     'Connector-Architektur'
   ];
   var wordIndex = 0;
