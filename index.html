@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Markus Götz – Software Development & Problemlöser. Portfolio mit Tech-Stack, Projekten und Werdegang.">
+  <title>Markus Götz – Software Development & Problemlöser</title>
+  <link rel="stylesheet" href="style.css">
+/head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">MG</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menü umschalten">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#techstack">Tech-Stack</a></li>
+        <li><a href="#showcase">Showcase</a></li>
+        <li><a href="#timeline">Timeline</a></li>
+        <li><a href="#funfacts">Fun Facts</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-image-wrapper">
+        <div class="hero-image-placeholder">
+          <img src="assets/images/profile-image-round.png" alt="Portrait von Markus Götz" class="hero-image">
+          <!--
+          <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="60" cy="45" r="22" stroke="currentColor" stroke-width="2.5"/>
+            <path d="M20 105c0-22 17.8-40 40-40s40 18 40 40" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+          -->
+        </div>
+      </div>
+      <h1 class="hero-name">Markus Götz</h1>
+      <p class="hero-subtitle">Software Development &amp; Problemlöser</p>
+      <p class="hero-intro">
+        Hi, ich bin Markus – leidenschaftlicher Softwareentwickler mit Herz für strukturierten Code und smarte Prozesse.
+        Ich baue stabile Brücken zwischen komplexer Logik und starker Performance.
+      </p>
+      <p class="hero-focus">
+        Aktuell fokussiert auf:
+        <span class="typewriter" id="typewriter"></span><span class="cursor">|</span>
+      </p>
+      <p class="hero-credo">
+        „Meine Hand für meine Arbeit" – ich stehe aus Überzeugung für die Qualität, Stabilität und Nachhaltigkeit meines Codes ein.
+      </p>
+      <p class="hero-credit">
+        Ein großes Dankeschön an <strong>Jens R.</strong> (innochange GmbH), dessen sprichwörtlicher Zettel an der Wand mich zutiefst geprägt hat und mir bis heute als täglicher Kompass im Software-Handwerk dient.
+      </p>
+    </div>
+    <div class="scroll-indicator" aria-hidden="true">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    </div>
+  </header>
+
+  <!-- Tech-Stack -->
+  <section class="section" id="techstack">
+    <div class="container">
+      <h2 class="section-title">Tech-Stack</h2>
+
+      <div class="tech-category">
+        <h3 class="tech-category-title">Sprachen &amp; Formate</h3>
+        <div class="badge-grid">
+          <span class="badge" data-color="cpp">C++</span>
+          <span class="badge" data-color="csharp">C#</span>
+          <span class="badge" data-color="php">PHP</span>
+          <span class="badge" data-color="perl">Perl</span>
+          <span class="badge" data-color="js">JavaScript</span>
+          <span class="badge" data-color="html">HTML5</span>
+          <span class="badge" data-color="css">CSS3</span>
+          <span class="badge" data-color="md">Markdown</span>
+          <span class="badge" data-color="yaml">YAML</span>
+        </div>
+      </div>
+
+      <div class="tech-category">
+        <h3 class="tech-category-title">Werkzeuge &amp; KI</h3>
+        <div class="badge-grid">
+          <span class="badge" data-color="git">Git</span>
+          <span class="badge" data-color="docker">Docker</span>
+          <span class="badge" data-color="n8n">n8n</span>
+          <span class="badge" data-color="vscode">VS Code</span>
+          <span class="badge" data-color="claude">Claude Code</span>
+          <span class="badge" data-color="obsidian">Obsidian</span>
+          <span class="badge" data-color="comfyui">ComfyUI</span>
+          <span class="badge" data-color="ollama">Ollama</span>
+        </div>
+      </div>
+
+      <div class="tech-category">
+        <h3 class="tech-category-title">Kreatives &amp; Medien</h3>
+        <div class="badge-grid">
+          <span class="badge" data-color="ps">Photoshop</span>
+          <span class="badge" data-color="davinci">DaVinci Resolve</span>
+          <span class="badge" data-color="obs">OBS Studio</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Showcase -->
+  <section class="section section--alt" id="showcase">
+    <div class="container">
+      <h2 class="section-title">Showcase</h2>
+      <p class="section-subtitle">Meine aktuell laufenden Projekte</p>
+
+      <div class="card-grid">
+        <article class="card">
+          <div class="card-header">
+            <span class="card-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+            </span>
+            <h3 class="card-title">septem-sensu.de</h3>
+          </div>
+          <p class="card-tagline">Weil Fotografieren Spaß macht</p>
+          <p class="card-desc">
+            Eine Plattform und ein kreativer Raum rund um die Faszination der Porträt- und Studiofotografie. Neben technischen Aspekten wie Lichtgestaltung und Location-Auswahl liegt der Fokus hier auf dem Gespür für gelungene Bildkompositionen und dem Ausdruck von Emotionen durch die Linse. Ein echtes Herzensprojekt.
+          </p>
+          <div class="card-meta">
+            <span class="card-vibe">Kreativ, leidenschaftlich, Fokus auf Licht &amp; Komposition</span>
+          </div>
+          <div class="card-tech">
+            <span class="mini-badge">PHP</span>
+            <span class="mini-badge">JavaScript</span>
+            <span class="mini-badge">HTML</span>
+            <span class="mini-badge">CSS</span>
+          </div>
+          <a href="https://septem-sensu.de" target="_blank" rel="noopener noreferrer" class="card-link">
+            Projekt ansehen
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </a>
+        </article>
+
+        <article class="card">
+          <div class="card-header">
+            <span class="card-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 2c3 3 5 7 5 10s-2 7-5 10"/><path d="M2 12h20"/><ellipse cx="12" cy="12" rx="4" ry="10"/></svg>
+            </span>
+            <h3 class="card-title">bloompro.de</h3>
+          </div>
+          <p class="card-tagline">Dein digitales Grow-Journal</p>
+          <p class="card-desc">
+            Ein durchdachtes und effizientes Journal-Tool zur Verwaltung und Protokollierung des eigenen Anbaus. Hilft Nutzern, jeden einzelnen Schritt der Pflanzenentwicklung lückenlos zu dokumentieren, um optimale Ergebnisse bei der Ernte zu erzielen. Smarte Datenstrukturierung trifft auf benutzerfreundliche Workflows.
+          </p>
+          <div class="card-meta">
+            <span class="card-vibe">Strukturierendes Tool, lösungsorientiert, exakt dokumentiert</span>
+          </div>
+          <div class="card-tech">
+            <span class="mini-badge">PHP</span>
+            <span class="mini-badge">JavaScript</span>
+            <span class="mini-badge">HTML</span>
+            <span class="mini-badge">CSS</span>
+          </div>
+          <a href="https://bloompro.de" target="_blank" rel="noopener noreferrer" class="card-link">
+            Projekt ansehen
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline -->
+  <section class="section" id="timeline">
+    <div class="container">
+      <h2 class="section-title">Werdegang</h2>
+      <p class="section-subtitle">Vom Sinclair ZX81 zum Data Warehouse</p>
+      <p class="section-intro">
+        Meine Reise begann 1986 mit einem Sinclair ZX81. Was als jugendliche Neugier startete, entwickelte sich über eine Ausbildung zum Rundfunk- und Fernsehtechniker und dem IHK-Abschluss als Fachinformatiker zu einer lebenslangen Leidenschaft für Softwarearchitektur. Heute blicke ich auf über 15 Jahre professionelle Erfahrung in der Senior-Entwicklung zurück.
+      </p>
+
+      <div class="timeline">
+        <div class="timeline-item" data-year="1986">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">1986</span>
+            <h4 class="timeline-heading">Der erste Hello-World-Code</h4>
+            <p class="timeline-text">Auf einem Sinclair ZX81 – der Start einer lebenslangen Leidenschaft.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-year="1994">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">1994</span>
+            <h4 class="timeline-heading">Rundfunk- und Fernsehtechniker</h4>
+            <p class="timeline-text">Das Fundament für tiefes System- und Hardwareverständnis.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-year="2010">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2010</span>
+            <h4 class="timeline-heading">Fachinformatiker für Anwendungsentwicklung (IHK)</h4>
+            <p class="timeline-text">Offizieller Abschluss und der Einstieg in die professionelle Softwareentwicklung.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item timeline-item--major" data-year="2010">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">09/2010 – 04/2020</span>
+            <h4 class="timeline-heading">Senior Software Entwickler | innochange GmbH</h4>
+            <ul class="timeline-list">
+              <li>Verantwortung für diverse Großprojekte und komplexe System-Connectoren</li>
+              <li>Tiefgehende Anbindungen an Warenwirtschaftssysteme (SAP Business One, Sage Office Line, Pixi) und PIM-Systeme</li>
+              <li>Integration globaler Zahlungsdienstleister (Amazon Pay, PayPal) und Single Sign-on Systemen</li>
+              <li>Weiterbildung: Agile Prozesse (JIRA), Docker Microservices, Symfony &amp; Shopware Core-Trainings</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item timeline-item--major" data-year="2020">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">04/2020 – 01/2024</span>
+            <h4 class="timeline-heading">Senior Software Entwickler | Tracking Garden GmbH</h4>
+            <ul class="timeline-list">
+              <li>Konzeption und Entwicklung eines hochperformaten Tracking Warehouse / Data Warehouse</li>
+              <li>Architektur eines DSGVO-konformen Tracking-Proxies für globale Services (GA4, Meta, Google &amp; Microsoft Ads)</li>
+              <li>Technische Projektleitung, Aufwandsschätzung und Fach-Training des Entwickler-Teams</li>
+              <li>Zertifizierungen (2021): Umfassende Google-Experten-Zertifikate für Analytics, Tag Manager &amp; Looker Studio</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fun Facts -->
+  <section class="section section--alt" id="funfacts">
+    <div class="container">
+      <h2 class="section-title">Fun Facts &amp; Gewohnheiten</h2>
+      <div class="fun-grid">
+        <div class="fun-card">
+          <span class="fun-emoji">☕</span>
+          <h4 class="fun-title">Koffein-Antrieb</h4>
+          <p class="fun-text">Code wird am effizientesten in Kaffee umgewandelt. Die genaue Tasse-zu-Lines-of-Code-Ratio wird noch empirisch ermittelt.</p>
+        </div>
+        <div class="fun-card">
+          <span class="fun-emoji">🗂️</span>
+          <h4 class="fun-title">Zweite Heimat: Obsidian</h4>
+          <p class="fun-text">Mein Gehirn hat ein digitales Backup. Ich organisiere mein gesamtes Wissen in Obsidian – inklusive vollautomatisierter Dataview-Listen und Git-Versionskontrolle.</p>
+        </div>
+        <div class="fun-card">
+          <span class="fun-emoji">📺</span>
+          <h4 class="fun-title">Hardware-Nostalgie</h4>
+          <p class="fun-text">Auch wenn ich heute komplexe Cloud- und Data-Infrastrukturen baue – die Faszination für das leise Fiepen eines alten Röhrenfernsehers oder die 1 KB RAM des ZX81 werde ich nie vergessen.</p>
+        </div>
+        <div class="fun-card">
+          <span class="fun-emoji">🌌</span>
+          <h4 class="fun-title">Nachtschwärmer-Modus</h4>
+          <p class="fun-text">Die besten Ideen für das Multiplayer-Adventure entstehen meistens dann, wenn der Rest der Welt schon schläft und die IDE im Dark-Mode leuchtet.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Footer -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <h2 class="section-title">Kontakt &amp; Netzwerke</h2>
+      <p class="footer-intro">
+        Lust auf einen Tech-Talk, Fragen zu meinen Projekten oder einfach mal virtuell einen Kaffee trinken? Du findest mich hier:
+      </p>
+      <div class="contact-links">
+        <a href="mailto:septem.sensu@gmail.com" class="contact-link" aria-label="E-Mail">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          <span>septem.sensu@gmail.com</span>
+        </a>
+        <a href="https://github.com/septem-sensu" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="GitHub">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          <span>GitHub</span>
+        </a>
+        <a href="https://discord.com/users/septem_sensu" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="Discord">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+          <span>Discord</span>
+        </a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Markus Götz. Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
