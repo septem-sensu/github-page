@@ -428,6 +428,7 @@ ul { list-style: none; }
 .badge[data-color="csharp"]::before   { background: #68217A; }
 .badge[data-color="php"]::before      { background: #777BB4; }
 .badge[data-color="perl"]::before     { background: #39457E; }
+.badge[data-color="sql"]::before      { background: #336791; }
 .badge[data-color="js"]::before       { background: #F7DF1E; }
 .badge[data-color="html"]::before     { background: #E34F26; }
 .badge[data-color="css"]::before      { background: #1572B6; }

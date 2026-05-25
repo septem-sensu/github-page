@@ -8,7 +8,7 @@ Mein persönliches Credo bei jedem Projekt lautet: **„Meine Hand für meine Ar
 ---
 ## Tech-Stack
 ### Sprachen & Formate (Languages & Formats)
-- **Code:** C++, C#, PHP, Perl, JavaScript
+- **Code:** C++, C#, PHP, Perl, JavaScript, SQL
 - **Web & Data:** HTML5, CSS3, Markdown, YAML
 
 ### Werkzeuge & KI (Automation & DevOps)
